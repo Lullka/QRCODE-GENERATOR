@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar QR-Code</title>
+    <meta criador="Luka Piancó" github="">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <section>
+        <div id="containerQR" class="container showed">
+            <h1>Gerador de <span class="wordQRCODE">QR CODE</span></h1>
+            <span id="informationMoment">Cole aqui um link ou escreva algo</span>
+            <img id="qrcodeIMG" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=oilUKA">
+            <div class="inputArea">
+                <button generateQR()  class="smallBtn" id="searchBtn"><img src="https://www.svgrepo.com/show/7109/search.svg" alt="search icon"></button>
+                <input type="text" name="dbOfSearch" id="inputSearch">
+            </div>
+            <button class="largeSearchBtn" onclick="generateQR()" id="searchBtn">Gerar <span class="wordQRCODE">QRCODE</span></button>
+        </div> 
+    </section>
+</body>
+</html>
